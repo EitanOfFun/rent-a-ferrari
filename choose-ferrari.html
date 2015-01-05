@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Rent-a-Ferrari.com</title>
+  <link rel="stylesheet" href="stylesheets/main.css">
+</head>
+
+<body>
+  <div class="overlay" id="overlay" style="display:none;"></div>
+  <div class="box" id="box">
+    <a class="boxclose" id="boxclose"></a>
+    <div id="explore" class="explore"></div>
+  </div>
+
+  <header class="loggedin-header">
+    <a href="choose-ferrari.html">
+      <span id="loggedin-logo" class="loggedin-logo"></span>
+    </a>
+
+    <span id="logout-btn" class="logout-btn">Log out</span>
+  </header>
+
+  <div class="purchase-form">
+    <div class="purchase-title">Choose your Ferrari</div>
+    <div class="purchase-option">
+      <label class="purchase-form-label">Model:</label>
+      <select class="modelslist" name="modelslist">
+        <option value="ferrari-250-gt">Ferrari 250 GT California Spyder</option>
+      </select>
+      <span id="model-price" class="model-price">+500$</span>
+    </div>
+    <div class="purchase-option">
+      <label class="purchase-form-label">Paint Color:</label>
+      <input id="paint-color" class="paint-color" type="color" value="#AF2832">
+      <span id="color-price" class="color-price">+10$</span>
+    </div>
+    <button id="threeD-btn" class="threeD-btn">See it in 3D
+      <span class="new-text">New!</span>
+    </button>
+
+    <div class="purchase-title">Travel Route</div>
+    <div class="travel-route">
+      <input class="travel-route-from" oninput="inputChanging()" id="from" type="text" placeholder="From: Current location">
+      <input class="travel-route-to" oninput="inputChanging()" id="to" type="text" placeholder="To: Current location">
+      <button onclick="mapRouteBtn()" class="map-route-btn" id="map-route-btn">Map Route</button>
+    </div>
+    <div id="map-canvas" class="map-canvas"></div>
+    <div class="confirmed-route-info">
+      <div class="confirmed-price">
+        <label class="purchase-form-label">Price:</label>
+        <div id="route-price" class="route-price"></div>
+        
+        <div class="meter"><span id="progressbar" style="width: 20%"></span></div>
+      </div>
+      <div class="confirmed-from">
+        <label class="purchase-form-label">From:</label>
+        <span class="confirmed-from-location" id="confirmed-from-location"></span>
+      </div>
+      <div class="confirmed-to">
+        <label class="purchase-form-label">To:</label>
+        <span class="confirmed-to-location" id="confirmed-to-location"></span>
+      </div>
+    </div>
+    <div class="checkout">
+      <button id="checkout-btn" class="checkout-btn" disabled>Checkout
+        <span id="total-price" class="total-price"></span>
+      </button>
+    </div>
+  </div>
+  <script src="scripts/choose-ferrari.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+  <script src="scripts/vendor/jquery-2.1.3.js"></script>
+  <script src="scripts/vendor/modernizr-latest.js"></script>
+  <script src="scripts/vendor/three.min.js"></script>
+  <script src="scripts/vendor/OrbitControls.js"></script>
+<!--  <script src="scripts/main.js"></script>-->
+  <script src="scripts/price.js"></script>
+  <script src="scripts/explore.js" async></script>
+</body>
+
+</html>
