@@ -645,6 +645,10 @@ td, th {
 .map-canvas {
   height: 150px; }
 
+@media screen and (min-width: 750px) {
+.map-canvas {
+  height: 500px; }
+}
 /* line 217, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/main.sass */
 .model-price, .route-price, .color-price {
   float: right;
