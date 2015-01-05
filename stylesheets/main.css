@@ -405,8 +405,9 @@ td, th {
     background-position: 50px 50px; } }
 
 /* line 5, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/main.sass */
+
 .fullscreen-img {
-  background: url('https://www.dropbox.com/s/chcemx5n3q1bn7p/7.jpg?dl=0') no-repeat center center fixed;
+  background: url('https://www.dropbox.com/s/chcemx5n3q1bn7p/7.jpg?raw=1') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
