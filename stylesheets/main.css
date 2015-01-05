@@ -1,0 +1,790 @@
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom. */
+/* line 8, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/normalize */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin. */
+/* line 19, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/normalize */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+ * ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11. */
+/* line 43, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/normalize */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera. */
+/* line 53, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/normalize */
+audio, canvas, progress, video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices. */
+/* line 63, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/normalize */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22. */
+/* line 72, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/normalize */
+[hidden], template {
+  display: none; }
+
+/* Links
+ * ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10. */
+/* line 81, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/normalize */
+a {
+  background-color: transparent; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers. */
+/* line 88, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/normalize */
+a:active, a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+ * ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome. */
+/* line 97, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/normalize */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome. */
+/* line 104, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/normalize */
+b, strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome. */
+/* line 110, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/normalize */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome. */
+/* line 117, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/normalize */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9. */
+/* line 124, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/normalize */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers. */
+/* line 131, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/normalize */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers. */
+/* line 138, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/normalize */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 144, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/normalize */
+sup {
+  top: -0.5em; }
+
+/* line 147, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/normalize */
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+ * ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10. */
+/* line 156, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/normalize */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11. */
+/* line 162, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/normalize */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+ * ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari. */
+/* line 171, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/normalize */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers. */
+/* line 177, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/normalize */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers. */
+/* line 185, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/normalize */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers. */
+/* line 194, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/normalize */
+code, kbd, pre, samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+ * ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set. */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome. */
+/* line 215, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/normalize */
+button, input, optgroup, select, textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11. */
+/* line 226, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/normalize */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox. */
+/* line 236, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/normalize */
+button, select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others. */
+/* line 249, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/normalize */
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements. */
+/* line 259, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/normalize */
+button[disabled], html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+. */
+/* line 266, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/normalize */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet. */
+/* line 274, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/normalize */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10. */
+/* line 285, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/normalize */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`. */
+/* line 297, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/normalize */
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof). */
+/* line 305, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/normalize */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance). */
+/* line 319, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/normalize */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding. */
+/* line 325, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/normalize */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets. */
+/* line 334, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/normalize */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11. */
+/* line 343, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/normalize */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X. */
+/* line 350, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/normalize */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+ * ========================================================================== */
+/**
+ * Remove most spacing between table cells. */
+/* line 359, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/normalize */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 364, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/normalize */
+td, th {
+  padding: 0; }
+
+/***** SIZES *****/
+/***** COLORS *****/
+/***** FONT SIZES *****/
+/* line 1, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/progressbar */
+.meter {
+  height: 15px;
+  position: relative;
+  background: #555;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  padding: 8px;
+  -webkit-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+  -moz-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3); }
+
+/* line 13, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/progressbar */
+.meter > span {
+  display: block;
+  height: 100%;
+  -webkit-border-top-right-radius: 8px;
+  -webkit-border-bottom-right-radius: 8px;
+  -moz-border-radius-topright: 8px;
+  -moz-border-radius-bottomright: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  -webkit-border-top-left-radius: 20px;
+  -webkit-border-bottom-left-radius: 20px;
+  -moz-border-radius-topleft: 20px;
+  -moz-border-radius-bottomleft: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: #2bc253;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #2bc253), color-stop(1, #54f054));
+  background-image: -moz-linear-gradient(center bottom, #2bc253 37%, #54f054 69%);
+  -webkit-box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3), inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3), inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3), inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden; }
+
+/* line 37, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/progressbar */
+.meter > span:after, .animate > span > span {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(0.25, rgba(255, 255, 255, 0.2)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.2)), color-stop(0.75, rgba(255, 255, 255, 0.2)), color-stop(0.75, transparent), to(transparent));
+  background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+  z-index: 1;
+  -webkit-background-size: 50px 50px;
+  -moz-background-size: 50px 50px;
+  -webkit-animation: move 2s linear infinite;
+  -webkit-border-top-right-radius: 8px;
+  -webkit-border-bottom-right-radius: 8px;
+  -moz-border-radius-topright: 8px;
+  -moz-border-radius-bottomright: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  -webkit-border-top-left-radius: 20px;
+  -webkit-border-bottom-left-radius: 20px;
+  -moz-border-radius-topleft: 20px;
+  -moz-border-radius-bottomleft: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  overflow: hidden; }
+
+/* line 64, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/progressbar */
+.animate > span:after {
+  display: none; }
+
+@-webkit-keyframes move {
+  /* line 68, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/progressbar */
+  0% {
+    background-position: 0 0; }
+
+  /* line 70, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/progressbar */
+  100% {
+    background-position: 50px 50px; } }
+
+/* line 5, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/main.sass */
+.fullscreen-img {
+  background: url(../img/7.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+/* line 12, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/main.sass */
+.loggedin-header {
+  background: #6153b1;
+  height: 50px;
+  width: 100%;
+  margin: 0; }
+
+/* line 18, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/main.sass */
+.loggedin-logo {
+  color: white;
+  font-family: tahoma, Times, sans-serif;
+  font-size: 1.3em;
+  font-weight: bold;
+  padding: 13px 0 0 7px;
+  float: left; }
+
+/* line 26, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/main.sass */
+.logout-btn {
+  color: white;
+  background-color: #6153b1;
+  font-family: tahoma, Times, sans-serif;
+  padding: 6px;
+  margin: 9px 5px 0 0;
+  border-radius: 5px;
+  display: inline;
+  float: right; }
+  /* line 35, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/main.sass */
+  .logout-btn:hover {
+    background-color: #4d4190;
+    cursor: pointer; }
+
+/* line 39, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/main.sass */
+.login-header {
+  background: rgba(97, 83, 177, 0.24);
+  opacity: 13%;
+  height: 80px;
+  width: 100%;
+  display: inline-block; }
+
+/* line 46, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/main.sass */
+.login-container {
+  display: inline-block;
+  width: 280px;
+  margin: 5px 5px 0 0;
+  float: right; }
+
+/* line 52, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/main.sass */
+.login-username-container {
+  float: left;
+  display: inline-block;
+  width: 104px; }
+
+/* line 57, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/main.sass */
+.login-password-container {
+  float: left;
+  display: inline-block;
+  width: 104px;
+  margin-left: 5px; }
+
+/* line 63, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/main.sass */
+.login-btn {
+  display: inline-block;
+  width: 48px;
+  height: 18px;
+  font-size: 0.55em;
+  font-weight: bold;
+  color: white;
+  font-family: tahoma, Times, sans-serif;
+  background-color: rgba(150, 171, 240, 0.15);
+  margin: 23px 0 0 7px; }
+
+/* line 74, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/main.sass */
+.login-username-label {
+  display: inline-block;
+  font-size: 0.55em;
+  color: white;
+  width: 100%; }
+
+/* line 80, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/main.sass */
+.login-password-label {
+  display: inline-block;
+  width: 100%;
+  font-size: 0.55em;
+  color: white; }
+
+/* line 86, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/main.sass */
+.login-register-link {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.55em;
+  color: #8b9dc3; }
+  /* line 91, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/main.sass */
+  .login-register-link:hover {
+    text-decoration: underline; }
+
+/* line 94, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/main.sass */
+.inputtext {
+  width: 100px;
+  height: 18px;
+  margin-top: 3px;
+  font-size: 0.7em; }
+
+/* line 100, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/main.sass */
+.bad-input {
+  border: 2px solid red; }
+
+/* line 103, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/main.sass */
+.logo {
+  color: white;
+  font-family: tahoma, Times, sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 24px 0 24px 2%;
+  display: inline;
+  float: left; }
+
+/* line 112, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/main.sass */
+.main-instructions {
+  float: left; }
+
+/* line 115, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/main.sass */
+.login-form {
+  float: left; }
+
+/* line 118, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/main.sass */
+.register-form {
+  background-color: rgba(100, 188, 174, 0.46);
+  float: right;
+  margin: 5px 15px 0;
+  padding: 10px;
+  border-radius: 20px;
+  color: #060226; }
+  /* line 125, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/main.sass */
+  .register-form label {
+    font-weight: bold;
+    display: block;
+    font-size: 1.1em;
+    margin: 10px 0 0 0;
+    padding: 0; }
+  /* line 131, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/main.sass */
+  .register-form .register-firstName, .register-form .register-username, .register-form .register-password {
+    display: block;
+    margin: 10px 0 0 0; }
+  /* line 134, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/main.sass */
+  .register-form .register-btn {
+    margin: 15px 0 0 60px;
+    display: block;
+    width: 88px;
+    height: 28px;
+    font-weight: bold;
+    color: white;
+    font-family: tahoma, Times, sans-serif;
+    background-color: rgba(113, 110, 211, 0.84); }
+
+/* line 144, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/main.sass */
+.register-h2 {
+  font-family: tahoma, Times, sans-serif;
+  font-size: 1.5em;
+  font-weight: bold; }
+
+/* line 149, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/main.sass */
+.register-h3 {
+  font-family: tahoma, Times, sans-serif;
+  font-size: 1.3em;
+  margin-bottom: 10px; }
+
+/* line 154, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/main.sass */
+.price-card {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 100px;
+  width: 33%;
+  background-color: blue;
+  font-size: 1.3em;
+  font-weight: bold;
+  border-top-right-radius: 35px;
+  border-top-left-radius: 35px;
+  text-align: center;
+  z-index: 3; }
+  /* line 167, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/main.sass */
+  .price-card > span {
+    width: 100%;
+    display: inline-block; }
+  /* line 170, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/main.sass */
+  .price-card > input {
+    font-size: 0.65em;
+    font-weight: normal;
+    width: 70%; }
+  /* line 174, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/main.sass */
+  .price-card > .calc-btn {
+    width: 50%;
+    height: 20px;
+    font-size: 0.55em;
+    font-weight: bold;
+    color: white;
+    font-family: tahoma, Times, sans-serif;
+    background-color: #21197b; }
+
+/* line 183, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/main.sass */
+.threeD-card {
+  z-index: 2;
+  position: fixed;
+  bottom: 0;
+  left: 30%;
+  height: 100px;
+  width: 40%;
+  font-size: 1.3em;
+  font-weight: bold;
+  text-align: center;
+  background-color: red;
+  border-top-right-radius: 35px;
+  border-top-left-radius: 35px; }
+
+/* line 198, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/main.sass */
+.order-card {
+  z-index: 1;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 100px;
+  width: 33%;
+  font-size: 1.3em;
+  font-weight: bold;
+  text-align: center;
+  background-color: yellow;
+  border-top-right-radius: 35px;
+  border-top-left-radius: 35px; }
+
+/* line 214, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/main.sass */
+.map-canvas {
+  height: 150px; }
+
+/* line 217, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/main.sass */
+.model-price, .route-price, .color-price {
+  float: right;
+  color: #0f0;
+  font-weight: bold; }
+
+/* line 222, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/main.sass */
+.total-price {
+  color: red; }
+
+/* line 225, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/main.sass */
+.purchase-form {
+  padding: 5px; }
+  /* line 227, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/main.sass */
+  .purchase-form .purchase-form-label {
+    font-weight: bold;
+    padding: 0 5px 0 0; }
+  /* line 230, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/main.sass */
+  .purchase-form button {
+    background-color: #6153b1;
+    padding: 4px;
+    margin: 2px 0;
+    border-radius: 5px;
+    border: 0px;
+    color: white;
+    font-weight: bold; }
+  /* line 238, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/main.sass */
+  .purchase-form button:hover {
+    background-color: #4d4190; }
+  /* line 240, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/main.sass */
+  .purchase-form button:disabled {
+    background-color: #a199d1; }
+  /* line 244, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/main.sass */
+  .purchase-form .purchase-option {
+    display: block;
+    margin: 5px; }
+  /* line 247, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/main.sass */
+  .purchase-form > .purchase-title {
+    font-family: tahoma, Times, sans-serif;
+    clear: both;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em; }
+  /* line 253, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/main.sass */
+  .purchase-form > .modelslist {
+    font-size: 0.8em;
+    cursor: pointer; }
+  /* line 256, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/main.sass */
+  .purchase-form > .paint-color:hover {
+    cursor: pointer; }
+
+/* line 259, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/main.sass */
+.confirmed-route-info {
+  padding: 5px; }
+  /* line 261, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/main.sass */
+  .confirmed-route-info .confirmed-price, .confirmed-route-info calc-route-price-btn {
+    clear: both;
+    float: right;
+    width: 210px; }
+  /* line 265, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/main.sass */
+  .confirmed-route-info .confirmed-to, .confirmed-route-info .confirmed-from {
+    padding-bottom: 4px; }
+  /* line 267, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/main.sass */
+  .confirmed-route-info .confirmed-from-location, .confirmed-route-info .confirmed-to-location {
+    color: white; }
+
+/* line 271, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/main.sass */
+.travel-route .travel-route-from, .travel-route .travel-route-to {
+  width: 35%; }
+
+/* line 275, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/main.sass */
+.threeD-btn {
+  float: right; }
+  /* line 277, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/main.sass */
+  .threeD-btn .new-text {
+    color: red;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 1.2em; }
+
+/* line 283, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/main.sass */
+.checkout {
+  clear: both;
+  float: right;
+  padding: 5px 0; }
+
+/* line 288, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/main.sass */
+body {
+  background-color: #34a4b2; }
+
+/* line 292, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/main.sass */
+.explore {
+  height: 400px; }
+
+/* line 295, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/main.sass */
+.overlay {
+  background: black;
+  opacity: 0.5;
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 100; }
+
+/* line 305, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/main.sass */
+.box {
+  position: fixed;
+  top: -100%;
+  left: 5%;
+  right: 5%;
+  background-color: #fff;
+  color: #7F7F7F;
+  padding: 20px;
+  border: 2px solid #ccc;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -khtml-border-radius: 20px;
+  -moz-box-shadow: 0 1px 5px #333;
+  -webkit-box-shadow: 0 1px 5px #333;
+  z-index: 101; }
+
+/* line 321, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/main.sass */
+a.boxclose {
+  float: right;
+  margin-top: -30px;
+  margin-right: -30px;
+  cursor: pointer;
+  color: #fff;
+  border: 1px solid #AEAEAE;
+  border-radius: 30px;
+  background: #605F61;
+  font-size: 31px;
+  font-weight: bold;
+  display: inline-block;
+  line-height: 0px;
+  padding: 11px 3px; }
+
+/* line 336, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/main.sass */
+.boxclose:before {
+  content: "×"; }
+
+/*# sourceMappingURL=main.css.map */
