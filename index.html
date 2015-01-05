@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Rent-a-Ferrari.com</title>
+  <link rel="stylesheet" href="stylesheets/main.css">
+</head>
+
+<body class="fullscreen-img">
+  <header class="login-header">
+    <a href="index.html"><span class="logo">Rent a Ferrari</span></a>
+    <div class="login-container">
+      <div class="login-username-container">
+        <label class="login-username-label" for="login-username">Email or Phone</label>
+        <input type="text" class="inputtext" name="login-username" id="login-username">
+      </div>
+      <div class="login-password-container">
+        <label class="login-password-label" for="login-password" >Password</label>
+        <input type="password" class="inputtext" name="login-password" id="login-password">
+      </div>
+      <button id="login-btn" class="login-btn">Log In</button>
+    </div>
+  </header>
+
+
+
+  <div class="register-form">
+    <div class="register-h2">Sign Up</div>
+    <div class="register-h3">It's Free!</div>
+    
+    <input id="register-firstName" class="register-firstName" type="text" placeholder="First Name">
+  
+    <input id="register-username" class="register-username" type="text" placeholder="Email or mobile number">
+    
+    <input id="register-password" class="register-password" type="password" placeholder="New password">
+    
+    <label for="register-dob">Birthday</label>
+    <input type="date" name="register-dob" id="register-dob">
+
+    <label for="register-license">License #</label>
+    <input class="register-inputtext" id="register-license" type="text" name="register-license" placeholder="7 digits">
+
+    <button id="register-btn" class="register-btn" >Sign Up</button>
+  </div>
+  <div id="copyright" class="copyright"></div>
+
+
+
+  <!--
+      &copy;
+      <script type="text/javascript">
+        document.write(" " + new Date().getFullYear() + " My Ferrari Rental Company");
+      </script>
+-->
+  
+  <script src="scripts/main.js"></script>
+</body>
+</html>
