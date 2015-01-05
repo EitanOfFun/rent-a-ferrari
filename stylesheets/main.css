@@ -406,7 +406,7 @@ td, th {
 
 /* line 5, /mnt/home/my-projects/john-brice_web_final-project/stylesheets/main.sass */
 .fullscreen-img {
-  background: url(https://www.dropbox.com/s/chcemx5n3q1bn7p/7.jpg?dl=0?raw=1) no-repeat center center fixed;
+  background: url('https://dl-web.dropbox.com/get/public/maya%20final%20projects/ferrari%20(complex%20object)/Render%20Pictures/7.jpg?_subject_uid=60250400&w=AAC3qIMZ4T_ZMU62c2GQS84tZt0ZxDHvEHH-21_NussY2w') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
