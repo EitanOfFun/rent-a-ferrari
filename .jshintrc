@@ -1,0 +1,16 @@
+{
+	"bitwise": false,
+	"curly": true,
+	"immed": true,
+  "eqeqeq": true, 
+	"latedef": "nofunc",
+	"newcap": true,
+	"noempty": false,
+	"undef": false,
+	"strict": false,
+	"browser": true,
+	"devel": true,
+	"jquery": true,
+  "white": true,
+  "eqnull": true
+}
