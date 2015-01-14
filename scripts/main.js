@@ -46,8 +46,9 @@ function isLicenseValid(license) {
 //helper functions
 
 function existy(x) {
+  'use strict';
   // true if argument is neither undefined or null
-  return x != null;
+  return (x !== null) && (x !== undefined);
 }
 
 //input - the input DOM element 

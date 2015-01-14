@@ -44,7 +44,7 @@
     <div class="travel-route">
       <input class="travel-route-from" oninput="inputChanging()" id="from" type="text" placeholder="From: Current location">
       <input class="travel-route-to" oninput="inputChanging()" id="to" type="text" placeholder="To: Current location">
-      <button onclick="mapRouteBtn()" class="map-route-btn" id="map-route-btn">Map Route</button>
+      <button class="map-route-btn" id="map-route-btn">Map Route</button>
     </div>
     <div id="map-canvas" class="map-canvas"></div>
     <div class="confirmed-route-info">
@@ -70,11 +70,12 @@
     </div>
   </div>
   
-  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
   <script src="scripts/vendor/jquery-2.1.3.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
   <script src="scripts/vendor/modernizr.custom.01073.js"></script>
   <script src="scripts/vendor/three.min.js"></script>
   <script src="scripts/vendor/OrbitControls.js"></script>
+  
   <script src="scripts/price.js"></script>
   <script src="scripts/choose-ferrari.js"></script>
   <script src="scripts/explore.js" async></script>

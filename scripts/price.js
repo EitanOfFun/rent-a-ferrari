@@ -1,14 +1,20 @@
 /*global google, Modernizr, Worker, $, console, alert*/
-var directionsDisplay,
-  geocoder = new google.maps.Geocoder(),
-  directionsService = new google.maps.DirectionsService(),
-  map;
+
+
+var directionsDisplay = new google.maps.DirectionsRenderer(),
+    geocoder = new google.maps.Geocoder(),
+    directionsService = new google.maps.DirectionsService(),
+    map;
+
+displayMap(31.30, 34.45);
+document.getElementById('map-route-btn').addEventListener('click', mapRouteBtn);
 
 function disableCheckout() {
   'use strict';
   document.getElementById('total-price').innerHTML = '';
   document.getElementById('checkout-btn').disabled = true;
 }
+
 function inputChanging() {
   'use strict';
   document.getElementById('route-price').innerHTML = '';
@@ -21,39 +27,52 @@ function enableCheckout() {
   document.getElementById('checkout-btn').disabled = false;
 }
 
-function initialize() {
-  'use strict';
-  directionsDisplay = new google.maps.DirectionsRenderer();
-  if (Modernizr.geolocation) {
-    navigator.geolocation.getCurrentPosition(function (position) {
-      var googlePosition = new google.maps.LatLng(position.coords.latitude, position.coords.longitude),
-          mapOptions = {
-            zoom: 12,
-            center: googlePosition
-          };
-      
-      map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-      directionsDisplay.setMap(map);
-      
-      var marker = new google.maps.Marker({
-        position: googlePosition,
-        map: map,
-        title: 'Current Location!'
-      });
-    });
-  } else {
-    var israel = new google.maps.LatLng(31.30, 34.45),
-      mapOptions = {
-        zoom: 7,
-        center: israel
-      };
-    map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-    directionsDisplay.setMap(map);
+
+function showDefaultMapAndLogError(error) {
+  // default center of map is Israel
+  displayMap(31.30, 34.45);
+  switch (error.code) {
+  case error.PERMISSION_DENIED:
+    console.log("User denied the request for Geolocation.");
+    break;
+  case error.POSITION_UNAVAILABLE:
+    console.log("Location information is unavailable.");
+    break;
+  case error.TIMEOUT:
+    console.log("The request to get user location timed out.");
+    break;
+  case error.UNKNOWN_ERROR:
+    console.log("An unknown error occurred.");
+    break;
   }
 }
 
-function updatePrice(e) {
+function initMap() {
   'use strict';
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition, showDefaultMapAndLogError);
+  } else {
+    displayMap(31.30, 34.45);
+    console.log("Geolocation is not supported by this browser.");
+  }
+}
+
+function showPosition(position) {
+  'use strict';
+  displayMap(position.coords.latitude, position.coords.longitude);
+}
+
+function displayMap(lat, lng) {
+  'use strict';
+  var mapOptions = {
+    zoom: 7,
+    center: new google.maps.LatLng(lat, lng)
+  };
+  map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+  directionsDisplay.setMap(map);
+}
+
+function updatePrice(e) {
   document.getElementById('route-price').innerHTML = '+' + e.data + '$';
   document.getElementById('total-price').innerHTML = (510 + e.data) + '$';
 }
@@ -70,8 +89,7 @@ function calcRoute(from, to) {
   directionsService.route(request, function (response, status) {
     if (status === google.maps.DirectionsStatus.OK) {
       directionsDisplay.setDirections(response);
-      document.getElementById('confirmed-from-location').innerHTML = from;
-      document.getElementById('confirmed-to-location').innerHTML = to;
+      setConfirmedLocation(from, to);
       worker.postMessage(response.routes[0].legs[0].distance.value);
 
       $(function () {
@@ -88,17 +106,20 @@ function calcRoute(from, to) {
   });
 }
 
+function setConfirmedLocation(from, to) {
+  document.getElementById('confirmed-from-location').innerHTML = from;
+  document.getElementById('confirmed-to-location').innerHTML = to;
+}
+
 function mapRouteBtn() {
   'use strict';
   var from = document.getElementById('from').value,
     to = document.getElementById('to').value;
 
-  if (from === '' && to === '') {
-    //can't leave both blank
-    return false;
-  }
-
-  if (from === '') {
+  if (from !== '' && to !== '') {
+    calcRoute(from, to);
+    return;
+  } else if (from === '') {
     //using location for FROM
     if (Modernizr.geolocation) {
       navigator.geolocation.getCurrentPosition(function (position) {
@@ -140,7 +161,8 @@ function mapRouteBtn() {
       });
     }
   } else {
-    calcRoute(from, to);
+    //can't leave both blank
+    return false;
   }
 }
 
@@ -161,6 +183,3 @@ function codeLatLng(lat, lng, elm) {
 }
 
 
-
-
-google.maps.event.addDomListener(window, 'load', initialize);
